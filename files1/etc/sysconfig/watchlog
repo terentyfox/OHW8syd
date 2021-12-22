@@ -1,0 +1,8 @@
+#Watchdog service config file
+#To be placed in /etc/sysconfig
+
+#Word to seek
+WORD='ALERT'
+
+#File to monitor
+LOG=/var/log/watchlog.log

@@ -1,0 +1,8 @@
+#To be placed /lib/systemd/system
+[Unit]
+Description=My watchlog service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/sysconfig/watchlog
+ExecStart=/bin/bash /opt/watchlog.sh $WORD $LOG

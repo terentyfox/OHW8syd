@@ -6,7 +6,7 @@ MACHINES = {
 		:cpus => 2,
 		:memory => 2048,
 		#:ip_addr => '10.1.1.10',
-		:path => './script.sh'
+		:path => './systemdscript.sh'
 	},
 }
 

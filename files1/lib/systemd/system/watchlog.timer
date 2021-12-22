@@ -1,0 +1,10 @@
+#To be placed in /lib/systemd/system
+[Unit]
+Description=Run watchlog script every half a minute
+[Timer]
+#Run every half a minute or 30 sec
+OnUnitActiveSec=30
+Unit=watchlog.service
+
+[Install]
+WantedBy=multi-user.target

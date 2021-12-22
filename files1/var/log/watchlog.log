@@ -1,0 +1,12 @@
+ To be placed in /var/log
+ 1620  cd ..
+ 1621  cd OHW8bts
+ 1622  git status
+ 1623  git pull
+ ALERT
+ 1624  mc
+ 1625  git status
+ 1626  git add .
+ 1627  git commit
+ 1628  git push
+ 
