@@ -8,7 +8,7 @@
 /lib/systemd/system/watchlog.service - юнит сервиса
 /lib/systemd/system/watchlog.timer - таймер, запускающий юнит с заданной периодичностью.
 
-Комментарии в файле systemdscript.sh
+Настройка всех сервисов осуществляется на этапе Провижнинг скриптом systemdscript.sh. Комментарии в файле помогают понять назначение кода. 
 
 проверка работы:
 #tail -f /var/log/messages
