@@ -5,7 +5,7 @@ MACHINES = {
 		:box_name => "centos/7",
 		:cpus => 2,
 		:memory => 2048,
-		#:ip_addr => '10.1.1.10',
+		:ip_addr => '10.0.1.127',
 		:path => './systemdscript.sh'
 	},
 }
@@ -18,7 +18,7 @@ Vagrant.configure("2") do |config|
 			box.vm.host_name = boxname.to_s
 			box.vm.box = boxconfig[:box_name]
 			box.vm.host_name = boxname.to_s
-			#box.vm.network "private_network", ip: boxconfig[:ip_addr]
+			box.vm.network "private_network", ip: boxconfig[:ip_addr]
 
 			box.vm.provider :virtualbox do |vb|
 				vb.memory = boxconfig[:memory]
